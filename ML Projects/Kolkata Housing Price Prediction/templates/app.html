@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kolkata Home Price Prediction</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+		.switch-field {
+			display: flex;
+			margin-bottom: 36px;
+			overflow: hidden;
+			margin-left: 418px;
+		}
+
+		.switch-field input {
+			position: absolute !important;
+			clip: rect(0, 0, 0, 0);
+			height: 1px;
+			width: 1px;
+			border: 0;
+			overflow: hidden;
+
+		}
+
+		.switch-field label {
+			background-color: #e4e4e4;
+			color: rgba(0, 0, 0, 0.6);
+			font-size: 14px;
+			line-height: 1;
+			text-align: center;
+			padding: 8px 16px;
+			margin-right: -1px;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+			transition: all 0.1s ease-in-out;
+			width: 58px;
+
+		}
+
+		.switch-field label:hover {
+			cursor: pointer;
+		}
+
+		.switch-field input:checked+label {
+			background-color: #a5dc86;
+			box-shadow: none;
+		}
+
+		.switch-field label:first-of-type {
+			border-radius: 4px 0 0 4px;
+		}
+
+		.switch-field label:last-of-type {
+			border-radius: 0 4px 4px 0;
+		}
+
+		.form {
+			max-width: 270px;
+			font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+			font-weight: normal;
+			line-height: 1.625;
+			margin: 8px auto;
+			padding-left: 16px;
+			z-index: 2;
+		}
+
+		h2.sft {
+			font-size: 18px;
+			margin-bottom: 8px;
+			margin-left: 556px;
+		}
+
+		h2.bk {
+			font-size: 18px;
+			margin-bottom: 8px;
+			margin-left: 620px;
+		}
+
+		h2.lc {
+			font-size: 18px;
+			margin-bottom: 8px;
+			margin-left: 605px;
+		}
+		h2.op{
+			margin-left: 454px;
+			
+		}
+		h1.hd{
+			margin-left:355px;
+		}
+
+
+		.area {
+			font-family: "Roboto", sans-serif;
+			outline: 0;
+			background: #f2f2f2;
+			width: 34%;
+			border: 0;
+			margin: 0 420px 10px;
+			padding: 10px;
+			box-sizing: border-box;
+			font-size: 15px;
+			height: 35px;
+			border-radius: 5px;
+		}
+
+		.location {
+			font-family: "Roboto", sans-serif;
+			outline: 0;
+			background: #f2f2f2;
+			width: 455px;
+			border: 0;
+			margin: 0 417px 10px;
+			padding: 10px;
+			box-sizing: border-box;
+			font-size: 15px;
+			height: 40px;
+			border-radius: 5px;
+		}
+
+		.btn {
+			width: 156px;
+			height: 46px;
+			margin-left: 564px;
+			border-radius: 12px;
+			margin-top: 15px;
+		}
+
+		.result {
+			background: #dcd686;
+			width: 76%;
+			border: 0;
+			margin: 25px 0 10px;
+			box-sizing: border-box;
+			font-size: 15px;
+			height: 35px;
+			text-align: center;
+		}
+
+		.img {
+			background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-size: 100% 100%;
+			-webkit-filter: blur(5px);
+			-moz-filter: blur(5px);
+			-o-filter: blur(5px);
+			-ms-filter: blur(5px);
+			filter: blur(15px);
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+
+		body,
+		html {
+			height: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="img"></div>
+
+     <h1 class="hd">Kolkata Housing Price Prediction System</h1>
+	<form action="{{ url_for('predict_home_price')}}" method="post">
+		<h2 class="sft">Area (Square Feet)</h2>
+		<input class="area" type="text" id="uiSqft" class="floatLabel" name="total_sqft" value="1000" required>
+		<h2 class="bk">BHK</h2>
+		<div class="switch-field">
+			<input type="radio" id="radio-bhk-1" name="bhk" value="1" />
+			<label for="radio-bhk-1">1</label>
+			<input type="radio" id="radio-bhk-2" name="bhk" value="2" checked />
+			<label for="radio-bhk-2">2</label>
+			<input type="radio" id="radio-bhk-3" name="bhk" value="3" />
+			<label for="radio-bhk-3">3</label>
+			<input type="radio" id="radio-bhk-4" name="bhk" value="4" />
+			<label for="radio-bhk-4">4</label>
+			<input type="radio" id="radio-bhk-5" name="bhk" value="5" />
+			<label for="radio-bhk-5">5</label>
+		</div>
+
+
+
+		<h2 class="lc">Location</h2>
+		<div>
+			<select class="location" name="location" id="uiLocations" required>
+				<option value="" disabled="disabled" selected="selected">Choose a Location</option>
+				<option value="agarpara">agarpara</option>
+				<option value="alipore">alipore</option>
+				<option value="amtala">amtala</option>
+				<option value="ariadaha">ariadaha</option>
+				<option value="baghajatin">baghajatin</option>
+				<option value="baghbazar">baghbazar</option>
+				<option value="bagpota">bagpota</option>
+				<option value="baguiati">baguiati</option>
+				<option value="baguihati">baguihati</option>
+				<option value="baishnabghata patuli township">baishnabghata patuli township</option>
+				<option value="baithakkhana">baithakkhana</option>
+				<option value="ballygunge">ballygunge</option>
+				<option value="bangaon">bangaon</option>
+				<option value="bansdroni">bansdroni</option>
+				<option value="barabazar market">barabazar market</option>
+				<option value="baranagar">baranagar</option>
+				<option value="barasat">barasat</option>
+				<option value="barisha">barisha</option>
+				<option value="barrackpore">barrackpore</option>
+				<option value="baruipur">baruipur</option>
+				<option value="baruipur p">baruipur p</option>
+				<option value="basirhat">basirhat</option>
+				<option value="behala">behala</option>
+				<option value="belghoria">belghoria</option>
+				<option value="beliaghata">beliaghata</option>
+				<option value="beniapukur">beniapukur</option>
+				<option value="beniatola">beniatola</option>
+				<option value="bhatpara">bhatpara</option>
+				<option value="bhowanipore">bhowanipore</option>
+				<option value="bijoygarh">bijoygarh</option>
+				<option value="bira">bira</option>
+				<option value="birati">birati</option>
+				<option value="bow bazaar">bow bazaar</option>
+				<option value="bramhapur">bramhapur</option>
+				<option value="budge budge">budge budge</option>
+				<option value="champahati">champahati</option>
+				<option value="chinar park">chinar park</option>
+				<option value="chowbaga">chowbaga</option>
+				<option value="cossipore">cossipore</option>
+				<option value="dakshin gobindopur">dakshin gobindopur</option>
+				<option value="dakshineswar">dakshineswar</option>
+				<option value="dhakuria">dhakuria</option>
+				<option value="diamond harbour">diamond harbour</option>
+				<option value="dum dum">dum dum</option>
+				<option value="dum dum cantonment">dum dum cantonment</option>
+				<option value="dunlop">dunlop</option>
+				<option value="duttapukur">duttapukur</option>
+				<option value="east kolkata township">east kolkata township</option>
+				<option value="entally">entally</option>
+				<option value="ganguly bagan">ganguly bagan</option>
+				<option value="garden reach">garden reach</option>
+				<option value="garfa">garfa</option>
+				<option value="garia">garia</option>
+				<option value="gariahat">gariahat</option>
+				<option value="gobra">gobra</option>
+				<option value="habra">habra</option>
+				<option value="halisahar">halisahar</option>
+				<option value="haltu">haltu</option>
+				<option value="hridaypur">hridaypur</option>
+				<option value="hussainpur">hussainpur</option>
+				<option value="ichapur">ichapur</option>
+				<option value="jadavpur">jadavpur</option>
+				<option value="jodhpur park">jodhpur park</option>
+				<option value="joka">joka</option>
+				<option value="jorabagan">jorabagan</option>
+				<option value="jorasanko">jorasanko</option>
+				<option value="kabardanga">kabardanga</option>
+				<option value="kaikhali">kaikhali</option>
+				<option value="kalagachhia">kalagachhia</option>
+				<option value="kalighat">kalighat</option>
+				<option value="kalikapur">kalikapur</option>
+				<option value="kalyani">kalyani</option>
+				<option value="kamalgazi">kamalgazi</option>
+				<option value="kamardanga">kamardanga</option>
+				<option value="kamdahari">kamdahari</option>
+				<option value="kanchrapara loco">kanchrapara loco</option>
+				<option value="kasba">kasba</option>
+				<option value="keshtopur">keshtopur</option>
+				<option value="khardah">khardah</option>
+				<option value="khidirpur">khidirpur</option>
+				<option value="kolkata">kolkata</option>
+				<option value="krishnanagar">krishnanagar</option>
+				<option value="lake gardens">lake gardens</option>
+				<option value="lake town">lake town</option>
+				<option value="machuabazar">machuabazar</option>
+				<option value="madhyamgram">madhyamgram</option>
+				<option value="maheshtala">maheshtala</option>
+				<option value="malickpur">malickpur</option>
+				<option value="maniktala">maniktala</option>
+				<option value="mukundapur">mukundapur</option>
+				<option value="naihati">naihati</option>
+				<option value="narendrapur">narendrapur</option>
+				<option value="natagarh">natagarh</option>
+				<option value="natunhat">natunhat</option>
+				<option value="nayabad">nayabad</option>
+				<option value="netaji nagar">netaji nagar</option>
+				<option value="new alipore">new alipore</option>
+				<option value="new barrakpur">new barrakpur</option>
+				<option value="new town">new town</option>
+				<option value="nimta">nimta</option>
+				<option value="north dum dum">north dum dum</option>
+				<option value="paikpara">paikpara</option>
+				<option value="pailan">pailan</option>
+				<option value="palta">palta</option>
+				<option value="pancha sayar">pancha sayar</option>
+				<option value="panchpota">panchpota</option>
+				<option value="panihati">panihati</option>
+				<option value="pansila">pansila</option>
+				<option value="park street area">park street area</option>
+				<option value="paschim barisha">paschim barisha</option>
+				<option value="paschim putiary">paschim putiary</option>
+				<option value="picnic garden">picnic garden</option>
+				<option value="purba barisha">purba barisha</option>
+				<option value="purba putiary">purba putiary</option>
+				<option value="raghunathpur">raghunathpur</option>
+				<option value="rahara">rahara</option>
+				<option value="rajarhat">rajarhat</option>
+				<option value="rajpur sonarpur">rajpur sonarpur</option>
+				<option value="ramchandrapur">ramchandrapur</option>
+				<option value="regent park">regent park</option>
+				<option value="salt lake city">salt lake city</option>
+				<option value="santoshpur">santoshpur</option>
+				<option value="sarsuna">sarsuna</option>
+				<option value="shobhabazar">shobhabazar</option>
+				<option value="shyambazar">shyambazar</option>
+				<option value="shyamnagar">shyamnagar</option>
+				<option value="sinthi">sinthi</option>
+				<option value="sodepur">sodepur</option>
+				<option value="south dum dum">south dum dum</option>
+				<option value="srirampur">srirampur</option>
+				<option value="taltala">taltala</option>
+				<option value="tangra">tangra</option>
+				<option value="thakurpukur">thakurpukur</option>
+				<option value="tiljala">tiljala</option>
+				<option value="tollygunge">tollygunge</option>
+				<option value="topsia">topsia</option>
+				<option value="ward no 113">ward no 113</option>
+			</select>
+		</div>
+		<button type="submit" class="btn">Estimate Price</button>
+
+	</form>
+	<br><br>
+	<h2 class="op">{{ prediction_text }}<h2></h2>
+
+</body>
+
+</html>
