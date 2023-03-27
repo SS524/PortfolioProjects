@@ -1,0 +1,136 @@
+2023-03-24 17:39:53,400-INFO-application.py-Configuring session variable
+2023-03-24 17:39:53,453-INFO-application.py-Session variable is configured now
+2023-03-24 17:39:54,239-INFO-application.py-Configuring session variable
+2023-03-24 17:39:54,281-INFO-application.py-Session variable is configured now
+2023-03-24 17:40:05,312-INFO-application.py-User is logged out
+2023-03-24 17:40:19,756-INFO-application.py-User is trying to access homepage from the form
+2023-03-24 17:40:19,760-INFO-application.py-Form input received
+2023-03-24 17:40:30,857-INFO-application.py-All the movies have been scraped
+2023-03-24 17:40:30,857-INFO-application.py-All the session keys are initialized
+2023-03-24 17:42:01,447-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 17:42:01,448-INFO-application.py-Movie name is received from the form
+2023-03-24 17:42:01,448-INFO-application.py-Movie is not found and user is redirected to home page
+2023-03-24 17:42:08,923-INFO-application.py-All the the session keys are destroyed
+2023-03-24 17:43:29,361-INFO-application.py-User is trying to access homepage from the form
+2023-03-24 17:43:29,361-INFO-application.py-Form input received
+2023-03-24 17:43:39,900-INFO-application.py-All the movies have been scraped
+2023-03-24 17:43:39,900-INFO-application.py-All the session keys are initialized
+2023-03-24 17:53:52,958-INFO-application.py-Configuring session variable
+2023-03-24 17:53:52,997-INFO-application.py-Session variable is configured now
+2023-03-24 17:53:53,825-INFO-application.py-Configuring session variable
+2023-03-24 17:53:53,869-INFO-application.py-Session variable is configured now
+2023-03-24 17:54:03,966-INFO-application.py-User is logged in
+2023-03-24 17:54:11,008-INFO-application.py-All the the session keys are destroyed
+2023-03-24 17:54:18,356-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 17:54:18,356-INFO-application.py-User is logged out
+2023-03-24 17:54:18,356-INFO-application.py-User is redirected to signup page
+2023-03-24 17:54:23,579-INFO-application.py-User is trying to access homepage from the form
+2023-03-24 17:54:23,581-INFO-application.py-Form input received
+2023-03-24 17:54:55,466-INFO-application.py-All the movies have been scraped
+2023-03-24 17:54:55,466-INFO-application.py-All the session keys are initialized
+2023-03-24 17:55:05,524-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 17:55:05,524-INFO-application.py-Movie name is received from the form
+2023-03-24 17:55:05,524-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 17:55:13,026-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 17:55:13,026-INFO-application.py-User is logged in
+2023-03-24 17:55:13,026-INFO-application.py-User is redirected to homepage
+2023-03-24 17:56:12,114-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 17:56:12,114-INFO-application.py-User is logged in
+2023-03-24 17:56:12,114-INFO-application.py-User is redirected to homepage
+2023-03-24 17:56:19,572-INFO-application.py-User is trying to logout from URL bar
+2023-03-24 17:56:19,572-INFO-application.py-User is logged in
+2023-03-24 17:56:19,572-INFO-application.py-User is redirected to home page
+2023-03-24 17:56:22,478-INFO-application.py-All the the session keys are destroyed
+2023-03-24 17:56:29,083-INFO-application.py-User is trying to access homepage from the form
+2023-03-24 17:56:29,083-INFO-application.py-Form input received
+2023-03-24 17:57:04,823-INFO-application.py-All the movies have been scraped
+2023-03-24 17:57:04,824-INFO-application.py-All the session keys are initialized
+2023-03-24 17:57:29,933-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 17:57:29,933-INFO-application.py-Movie name is received from the form
+2023-03-24 17:57:29,933-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 17:57:55,440-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 17:57:55,440-INFO-application.py-User is logged in
+2023-03-24 17:57:55,440-INFO-application.py-User is redirected to homepage
+2023-03-24 17:58:13,706-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 17:58:13,706-INFO-application.py-Movie name is received from the form
+2023-03-24 17:58:13,706-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 17:58:18,663-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 17:58:18,663-INFO-application.py-User is logged in
+2023-03-24 17:58:18,663-INFO-application.py-User is redirected to homepage
+2023-03-24 17:58:32,234-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 17:58:32,234-INFO-application.py-User is logged in
+2023-03-24 17:58:32,234-INFO-application.py-User is redirected to homepage
+2023-03-24 17:58:49,990-INFO-application.py-All the the session keys are destroyed
+2023-03-24 18:00:18,911-INFO-application.py-Configuring session variable
+2023-03-24 18:00:18,950-INFO-application.py-Session variable is configured now
+2023-03-24 18:00:19,718-INFO-application.py-Configuring session variable
+2023-03-24 18:00:19,762-INFO-application.py-Session variable is configured now
+2023-03-24 18:00:28,464-INFO-application.py-User is logged out
+2023-03-24 18:00:36,128-INFO-application.py-User is trying to access homepage from the form
+2023-03-24 18:00:36,132-INFO-application.py-Form input received
+2023-03-24 18:01:09,039-INFO-application.py-All the movies have been scraped
+2023-03-24 18:01:09,039-INFO-application.py-All the session keys are initialized
+2023-03-24 18:01:23,748-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 18:01:23,748-INFO-application.py-Movie name is received from the form
+2023-03-24 18:01:23,748-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 18:01:33,330-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 18:01:33,330-INFO-application.py-User is logged in
+2023-03-24 18:01:33,330-INFO-application.py-User is redirected to homepage
+2023-03-24 18:01:40,343-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 18:01:40,343-INFO-application.py-Movie name is received from the form
+2023-03-24 18:01:40,343-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 18:01:43,634-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 18:01:43,636-INFO-application.py-User is logged in
+2023-03-24 18:01:43,637-INFO-application.py-User is redirected to homepage
+2023-03-24 18:01:47,615-INFO-application.py-All the the session keys are destroyed
+2023-03-24 18:03:11,878-INFO-application.py-Configuring session variable
+2023-03-24 18:03:11,925-INFO-application.py-Session variable is configured now
+2023-03-24 18:03:12,868-INFO-application.py-Configuring session variable
+2023-03-24 18:03:12,914-INFO-application.py-Session variable is configured now
+2023-03-24 18:03:18,080-INFO-application.py-User is logged out
+2023-03-24 18:03:46,550-INFO-application.py-User is logged out
+2023-03-24 18:10:15,080-INFO-application.py-Configuring session variable
+2023-03-24 18:10:15,118-INFO-application.py-Session variable is configured now
+2023-03-24 18:10:15,960-INFO-application.py-Configuring session variable
+2023-03-24 18:10:15,999-INFO-application.py-Session variable is configured now
+2023-03-24 18:10:21,042-INFO-application.py-User is logged out
+2023-03-24 18:10:27,379-INFO-application.py-User is trying to access homepage from the form
+2023-03-24 18:10:27,382-INFO-application.py-Form input received
+2023-03-24 18:11:01,022-INFO-application.py-All the movies have been scraped
+2023-03-24 18:11:01,022-INFO-application.py-All the session keys are initialized
+2023-03-24 18:11:49,021-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 18:11:49,023-INFO-application.py-Movie name is received from the form
+2023-03-24 18:11:49,023-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 18:12:04,957-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 18:12:04,958-INFO-application.py-User is logged in
+2023-03-24 18:12:04,958-INFO-application.py-User is redirected to homepage
+2023-03-24 18:12:08,898-INFO-application.py-All the the session keys are destroyed
+2023-03-24 19:16:02,049-INFO-application.py-Configuring session variable
+2023-03-24 19:16:02,134-INFO-application.py-Session variable is configured now
+2023-03-24 19:16:02,769-INFO-application.py-Configuring session variable
+2023-03-24 19:16:02,800-INFO-application.py-Session variable is configured now
+2023-03-24 19:16:19,590-INFO-application.py-User is logged out
+2023-03-24 19:16:26,406-INFO-application.py-User is trying to access homepage from the form
+2023-03-24 19:16:26,408-INFO-application.py-Form input received
+2023-03-24 19:16:51,308-INFO-application.py-All the movies have been scraped
+2023-03-24 19:16:51,309-INFO-application.py-All the session keys are initialized
+2023-03-24 19:17:02,872-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 19:17:02,872-INFO-application.py-Movie name is received from the form
+2023-03-24 19:17:02,872-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 19:17:22,910-INFO-application.py-User is trying to access homepage from the url bar
+2023-03-24 19:17:22,910-INFO-application.py-User is logged in
+2023-03-24 19:17:22,910-INFO-application.py-User is redirected to homepage
+2023-03-24 19:17:28,490-INFO-application.py-User is logged in
+2023-03-24 19:17:40,024-INFO-application.py-User is trying to logout from URL bar
+2023-03-24 19:17:40,024-INFO-application.py-User is logged in
+2023-03-24 19:17:40,024-INFO-application.py-User is redirected to home page
+2023-03-24 19:17:46,841-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 19:17:46,841-INFO-application.py-Movie name is received from the form
+2023-03-24 19:17:46,841-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 19:18:02,678-INFO-application.py-User is trying to logout from URL bar
+2023-03-24 19:18:02,678-INFO-application.py-User is logged in
+2023-03-24 19:18:02,678-INFO-application.py-User is redirected to home page
+2023-03-24 19:18:15,705-INFO-application.py-User is trying to search a movie from the home page form
+2023-03-24 19:18:15,705-INFO-application.py-Movie name is received from the form
+2023-03-24 19:18:15,706-INFO-application.py-Movie is found and will be displayed on the search page
+2023-03-24 19:18:19,932-INFO-application.py-All the the session keys are destroyed
