@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieSearch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+    <style>
+        @import url(‘https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap’);
+
+        body {
+            background-image: url("https://compote.slate.com/images/d972a3f0-f125-4eff-a66d-656f837dd0c6.jpg?crop=590%2C421%2Cx0%2Cy0&width=840");
+        }
+
+        .card {
+            margin-left: 312px;
+            width: 500px;
+            align-items: center;
+            margin-top: 50px;
+            border-radius: 2rem;
+            border-color: black;
+            border-style: ridge;
+            background-color: rgb(172, 236, 108);
+
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-body {
+            margin-right: 5px;
+            width: 450px;
+            text-align: center;
+            margin-top: -32px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="card-title">
+                <h4>Please introduce yourself to proceed!</h4>
+                <hr>
+            </div>
+
+            <div class="card-body">
+                <form action="/home" method="POST">
+                    <div class="form-outline mb-4">
+                        <input type="text" class="form-control" placeholder="Enter your name" name="name" required />
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-block mb-4" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
